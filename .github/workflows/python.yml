@@ -22,9 +22,6 @@ jobs:
         with:
           python-version: '3.8'  # Specify the Python version here
 
-      - name: Set Environment Variable
-        run: echo "TEST_ANSWER=${{ secrets.TEST_ANSWER }}" >> $GITHUB_ENV
-
       - name: Run Python Tests
         run: |
           cd python
